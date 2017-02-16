@@ -1,0 +1,65 @@
+(function($) {
+
+    $(function() {
+        $('#text').html('<h3>Click on a link</h3><br />Use the icon links to find out more about the cycle BOOM project.'); // default
+        $('.objectives').on('click', function(){
+            // remove clicked from all cog-icons
+            $("#cog div").removeClass('clicked');
+            var el = $(this);
+            $(this).toggleClass('clicked');
+            //el.css('backgroundPosition', '-50px -110px');
+            $('#text').html(el.html());
+        });
+        $('.participants').on('click', function(){
+            $("#cog div").removeClass('clicked');
+            var el = $(this);
+            $(this).toggleClass('clicked');
+            $('#text').html(el.html());
+        });
+        $('.approach').on('click', function(){
+            $("#cog div").removeClass('clicked');
+            var el = $(this);
+            $(this).toggleClass('clicked');
+            $('#text').html(el.html());
+        });
+        $('.study-areas').on('click', function(){
+            $("#cog div").removeClass('clicked');
+            var el = $(this);
+            $(this).toggleClass('clicked');
+            $('#text').html(el.html());
+        });
+        $('.outputs').on('click', function(){
+            $("#cog div").removeClass('clicked');
+            var el = $(this);
+            $(this).toggleClass('clicked');
+            $('#text').html(el.html());
+        });
+        $('.impact').on('click', function(){
+            $("#cog div").removeClass('clicked');
+            var el = $(this);
+            $(this).toggleClass('clicked');
+            $('#text').html(el.html());
+        });
+        $('.stakeholders').on('click', function(){
+            $("#cog div").removeClass('clicked');
+            var el = $(this);
+            $(this).toggleClass('clicked');
+            $('#text').html(el.html());
+        });
+        $('.outreach').on('click', function(){
+            $("#cog div").removeClass('clicked');
+            var el = $(this);
+            $(this).toggleClass('clicked');
+            $('#text').html(el.html());
+        });
+        /* collapsible panel bit */
+        //$("#cog").hide();
+        //toggle the component with class collapsediv
+        $(".collapse").click(function() {
+            $(this).toggleClass("selected");
+            //$(this).next("#cog").slideToggle(800);
+            $(this).prev().slideToggle(800);
+        });
+    });
+
+})(jQuery);
