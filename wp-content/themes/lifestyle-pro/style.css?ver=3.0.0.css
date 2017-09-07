@@ -1844,6 +1844,9 @@ Site Footer
 .logos img {
 
 }
+.rtpi {
+	padding-bottom: 2em;
+}
 /* line on right of LLHW logo (second logo) */
 .logos a:nth-child(-2n+2) img {
 	border-right: 1px solid #5d6771;
